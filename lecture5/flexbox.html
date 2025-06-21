@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        .container{
+            background-color: beige;
+            border: 5px solid rebeccapurple;
+            margin: 2px;
+            padding: 2px;
+            height: 500px;
+            display: flex; /* This will enable flexbox layout */
+            flex-direction: row; /* This will arrange the boxes in a row */
+
+            flex-wrap: wrap; /* This will allow the boxes to wrap to the next line if they exceed the container width */
+            /* flex-direction: column; This will stack the boxes vertically */
+            justify-content: center;
+
+            /* justify-content: space-between; This will distribute the boxes evenly with space between them */
+
+            align-items: center; /* This will center the boxes vertically */
+            align-content: center; /* This will center the content in the container */
+
+        }
+        #box1{
+            background-color: aqua;
+            order: 500; /* This will change the order of the box in the flex container */
+            flex-shrink: 4; /* This will allow the box to shrink if the container is too small */  
+            flex-grow: 5;
+            
+        }
+        #box2{
+            background-color: orange;
+            flex-grow: 1;
+            
+        }
+        #box3{
+            background-color: brown;
+            flex-grow: 1;
+        }
+        #box4{
+            background-color: lime;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+        <div class="box" id="box4">box 4</div>
+    </div>
+</body>
+</html>
