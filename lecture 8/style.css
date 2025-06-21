@@ -1,0 +1,90 @@
+.container{
+    width: 100vw;
+    background-color: gray;
+    height: 100vh;
+    border: 4px solid black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1{
+    width: 350px;
+    height: 80px;
+    background-color:blue;
+    border-radius: 10px;
+    border: 5px solid black;
+    position: relative;
+    animation-name: rightmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 1s; */
+    /* animation-timing-function:  cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes rightmove {
+    from{
+        top:0;
+        left:0;
+    }
+    to{
+        top:0;
+        left:1300px
+    }
+}
+.box2{
+    width: 350px;
+    height: 80px;
+    background-color:rgb(23, 201, 144);
+    border-radius: 10px;
+    border: 4px solid rgb(65, 23, 137);
+    position: relative;
+    animation-name: leftmove;
+    animation: 5s linear 1s infinite alternate none running leftmove;
+}
+
+@keyframes leftmove {
+    from{
+        top:550px;
+        left:1150px;
+    }
+    to{
+        top:550px;
+        left:0;
+    }
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(204, 234, 9);
+    border-radius: 100px;
+    border: 4px solid rgb(65, 23, 137);
+    position: relative;
+    top: 20%;
+    left: 40%;
+    box-shadow: 1px 1px 10px black;
+    animation: 10s ease-in-out 0s infinite alternate none running circlemove;
+}
+
+@keyframes circlemove {
+    0%{
+        top: 1%;
+        left: 5%;
+    }
+    30%{
+        top:5%;
+        left:90%
+    }
+    60%{
+        top: 15%;
+        left: 10%;
+    }
+    100%{
+        top:60% ;
+        left:90%;
+    }
+}
