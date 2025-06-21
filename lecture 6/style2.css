@@ -11,7 +11,7 @@
     width: 50%;
     margin: 3px;
     padding: 2px;
-    diaplay: flex;
+    display: flex;
     flex-direction: column;
 }
 .boxright{
