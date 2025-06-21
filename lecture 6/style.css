@@ -1,0 +1,43 @@
+.Container{
+    background-color: beige;
+    margin: 2px;
+    padding: 2px;
+    border: 5px solid rgb(251, 10, 134);
+    display: flex;
+}
+
+
+.box1{
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    border: 2px solid black;
+}
+.box2{
+    height: 250px;
+    width: 250px;
+    background-color: green;
+    border: 2px solid black;
+}
+.box3{
+    height: 250px;
+    width: 250px;
+    background-color: gold;
+    border: 2px solid black;
+}
+.box4{
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border: 2px solid black;
+}
+@media (min-width:640px) {
+    .Container{
+        flex-direction:row;
+    }
+}
+@media (max-width:640px) {
+    .Container{
+        flex-direction:column;
+    }
+}
