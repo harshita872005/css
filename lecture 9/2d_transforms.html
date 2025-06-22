@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d Transform</title>
+    <style>
+        .container{
+            width:100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 400px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+            transition: all 2s ease 1s;
+        }
+        .box:hover{
+            transform: rotate(360deg);
+        }
+        p{
+            font-size: 36px;
+        }
+        
+        .box2{
+             width: 400px;
+            height: 200px;
+            background-color: rgb(241, 69, 6);
+            border: 2px solid rgb(180, 86, 40);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease 1s;
+        }
+        .box2:hover{
+            transform:scale(2);
+        }
+        .box3{
+            width: 400px;
+            height: 200px;
+            background-color: rgb(208, 232, 74);
+            border: 2px solid rgb(234, 255, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease 1s;
+        }
+        .box3:hover{
+            transform: scale(0.5);
+        }
+        .box4{
+             width: 400px;
+            height: 200px;
+            background-color: rgb(14, 202, 231);
+            border: 2px solid rgb(95, 7, 235);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease 1s;
+        }
+        .box4:hover{
+            transform: skew(20deg, 20deg);
+        }
+        .box5{
+             width: 400px;
+            height: 200px;
+            background-color: rgb(222, 13, 180);
+            border: 2px solid rgb(178, 80, 155);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease 1s;
+        }
+        .box5:hover{
+            transform: translate(400px, 50px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>360 rotate</p>
+        </div>
+        <div class="box2">
+            <p>scale big</p>
+        </div>
+        <div class="box3">
+            <p>Scale small</p>
+        </div>
+        <div class="box4">
+            <p>tilt the box</p>
+        </div>
+        <div class="box5">
+            <p>Translate box</p>
+        </div>
+    </div>
+</body>
+</html>
